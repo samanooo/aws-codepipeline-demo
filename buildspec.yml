@@ -16,3 +16,4 @@ phases:
     commands:
       - echo Pushing Docker image to ECR...
       - docker push 368048665467.dkr.ecr.us-east-1.amazonaws.com/demo/flask-app:latest
+      - printf '[{"name":"flask-container","imageUri":"368048665467.dkr.ecr.us-east-1.amazonaws.com/demo/flask-app:latest"}]' > imagedefinitions.json
